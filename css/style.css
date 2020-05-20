@@ -1,0 +1,17 @@
+.color-area {
+  border: 1px solid black;
+  width: 100%;
+  height: 70px;
+}
+
+.label-red {
+  color: #ef5350;
+}
+
+.label-green {
+  color: #66bb6a;
+}
+
+.label-blue {
+  color: #42a5f5;
+}

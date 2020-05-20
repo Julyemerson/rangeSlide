@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <title>Range Slide RGB</title>
+  </head>
+  <body>
+    <h2 class="center-align">Range Slider RGB</h2>
+    <div class="container">
+      <div class="section">
+        <form action="#">
+          <div class="row">
+            <div class="col s4">
+              <div class="card-panel hoverable">
+                <label for="range1" class="label-red">(R) Vermelho </label>
+                <input
+                  type="range"
+                  name="range1"
+                  min="0"
+                  max="255"
+                  value="0"
+                  data-js="rangeRed"
+                />
+                <input type="text" data-js="inputRed" disabled />
+              </div>
+            </div>
+            <div class="col s4">
+              <div class="card-panel hoverable">
+                <label for="range2" class="label-green">(G) Verde</label>
+                <input
+                  type="range"
+                  name="range2"
+                  min="0"
+                  max="255"
+                  value="0"
+                  data-js="rangeGreen"
+                />
+                <input type="text" data-js="inputGreen" disabled />
+              </div>
+            </div>
+            <div class="col s4">
+              <div class="card-panel hoverable">
+                <label for="range3" class="label-blue">(B) Azul</label>
+                <input
+                  type="range"
+                  name="range3"
+                  min="0"
+                  max="255"
+                  value="0"
+                  data-js="rangeBlue"
+                />
+                <input type="text" data-js="inputBlue" disabled />
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="divider"></div>
+      <div class="section">
+        <div class="color-area" data-js="colorArea"></div>
+      </div>
+    </div>
+  </body>
+  <script src="./js/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</html>
